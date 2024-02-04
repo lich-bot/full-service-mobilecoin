@@ -71,7 +71,7 @@ RUN cp /app/target/release/generate-rsa-keypair /usr/local/bin/
 
 # This is the runtime container.
 # Adding/updating OS will not affect the ability to verify the build environment.
-FROM ubuntu:focal-20221019
+FROM ubuntu:focal-20240123
 
 RUN  addgroup --system --gid 1000 app \
   && adduser --system --ingroup app --uid 1000 app \
